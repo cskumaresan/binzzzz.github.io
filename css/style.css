@@ -617,7 +617,7 @@ Intro
 }
 .slides-container h1 {
     margin-bottom: 20px;
-    letter-spacing: 0.10em;
+    letter-spacing: .1rem;
 }
 .start {
     position: absolute;

@@ -893,165 +893,110 @@ if (trueMobile) {
 
 // google map styles and functions  --------
 
-var map;
-// your coordinates   --------
-var Robo = new google.maps.LatLng(40.761467, -73.956379);
-
-function initialize() {
-    var styles = [
-        {
-            featureType: 'water',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#292929'
-                },
-                {
-                    saturation: -100
-                },
-                {
-                    lightness: -18
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }, {
-            featureType: 'landscape',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#292929'
-                },
-                {
-                    saturation: -100
-                },
-                {
-                    lightness: -78
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }, {
-            featureType: 'road',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#292929'
-                },
-                {
-                    saturation: -100
-                },
-                {
-                    lightness: -34
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }, {
-            featureType: 'road.local',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#292929'
-                },
-                {
-                    saturation: -115
-                },
-                {
-                    lightness: -12
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }, {
-            featureType: 'poi.park',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#292929'
-                },
-                {
-                    saturation: -100
-                },
-                {
-                    lightness: -3
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }, {
-            featureType: 'poi',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#292929'
-                },
-                {
-                    saturation: -500
-                },
-                {
-                    lightness: -3
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }, {
-            featureType: 'transit',
-            elementType: 'all',
-            stylers: [
-                {
-                    hue: '#212121'
-                },
-                {
-                    saturation: -20
-                },
-                {
-                    lightness: -2
-                },
-                {
-                    visibility: 'on'
-                }
-   ]
-  }
-
-   ];
-    var mapOptions = {
-        zoom: 18,
-        zoomControl: false,
-        scaleControl: false,
-        scrollwheel: false,
-        disableDefaultUI: true,
-        center: Robo,
-        mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
-        }
-    };
-    map = new google.maps.Map(document.getElementById("map_canvas"),
-        mapOptions);
-    var styledMapOptions = {
-        name: "Robo"
-    }
-    var jayzMapType = new google.maps.StyledMapType(
-        styles, styledMapOptions);
-    map.mapTypes.set('bestfromgoogle', jayzMapType);
-    map.setMapTypeId('bestfromgoogle');
-    var companyImage = new google.maps.MarkerImage('images/marker.png',
-        new google.maps.Size(30, 30),
-        new google.maps.Point(0, 0),
-        new google.maps.Point(28, 58)
-    );
-    // your marker coordinates   --------
-    var companyPos = new google.maps.LatLng(40.761467, -73.956379);
-    var companyMarker = new google.maps.Marker({
-        position: companyPos,
-        map: map,
-        icon: companyImage,
-        zIndex: 3
-    });
+	var map;
+	// your coordinates   --------
+	var robo = new google.maps.LatLng( 9.992772,76.323437);	
+	function initialize() {	
+	  var styles = [
+		{
+			featureType: 'water',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#C20404' },
+				{ saturation: -100 },
+				{ lightness: -18 },
+				{ visibility: 'on' }
+			]
+		},{
+			featureType: 'landscape',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#C20404' },
+				{ saturation: -100 },
+				{ lightness: -78 },
+				{ visibility: 'on' }
+			]
+		},{
+			featureType: 'road',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#C20404' },
+				{ saturation: -100 },
+				{ lightness: -34 },
+				{ visibility: 'on' }
+			]
+		},{
+			featureType: 'road.local',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#C20404' },
+				{ saturation: -115 },
+				{ lightness: -12 },
+				{ visibility: 'on' }
+			]
+		},{
+			featureType: 'poi.park',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#C20404' },
+				{ saturation: -100 },
+				{ lightness: -3 },
+				{ visibility: 'on' }
+			]
+		},{
+			featureType: 'poi',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#C20404' },
+				{ saturation: -500 },
+				{ lightness: -3 },
+				{ visibility: 'on' }
+			]
+		},{
+			featureType: 'transit',
+			elementType: 'all',
+			stylers: [
+				{ hue: '#212121' },
+				{ saturation: -20 },
+				{ lightness: -2 },
+				{ visibility: 'on' }
+			]
+		}
+	
+	  ];  
+        
+	  var mapOptions = {
+		zoom:18,
+		zoomControl: false,
+		scaleControl: false,
+		scrollwheel: false,
+		disableDefaultUI:true,
+		center: robo,
+		mapTypeControlOptions: {
+		   mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
+		}
+	  };
+	map = new google.maps.Map(document.getElementById("map_canvas"),
+		 mapOptions);
+	var styledMapOptions = {
+		  name: "robo"
+	}	
+	var roboMapType = new google.maps.StyledMapType(
+		styles, styledMapOptions);
+	map.mapTypes.set('bestfromgoogle',roboMapType);
+	map.setMapTypeId('bestfromgoogle');				
+	var companyImage = new google.maps.MarkerImage('images/marker.png',
+		new google.maps.Size(50,50),
+		new google.maps.Point(0,0),
+		new google.maps.Point(28,58)
+	);
+	// your marker coordinates   --------
+	var companyPos = new google.maps.LatLng(9.992772,76.323437);
+	var companyMarker = new google.maps.Marker({
+		position: companyPos,
+		map: map,
+		icon: companyImage,
+		zIndex: 3,
+        title: "Robo Inventions"
+	});
 }
