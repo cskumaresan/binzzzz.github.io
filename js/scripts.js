@@ -35,7 +35,7 @@ function initRobo() {
     var $mem = $('.member-box');
     var memlenght = $('.member-box').length;
     var $project = $('.box a');
-    var projectlenght = $('.box a').length;
+    var projectlength = $('.box a').length;
 
 
     // show menu ------------------	
@@ -96,7 +96,7 @@ function initRobo() {
 
     function showprojectbox() {
         setTimeout(function () {
-            for (var i = 0; i <= projectlenght; i++) {
+            for (var i = 0; i <= projectlength; i++) {
                 var projectb = $project[i];
                 $(projectb).delay(250 * i).animate({
                     'opacity': '1',
@@ -182,7 +182,7 @@ function initRobo() {
 
     $('#slides').superslides({
         animation: 'fade',
-        play: 10000
+        play: 5000
     });
 
     //  scroll nav --------
