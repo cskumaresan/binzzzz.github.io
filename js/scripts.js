@@ -980,6 +980,7 @@ if (trueMobile) {
 		 mapOptions);
 	var styledMapOptions = {
 		  name: "robo"
+        
 	}	
 	var roboMapType = new google.maps.StyledMapType(
 		styles, styledMapOptions);
@@ -990,6 +991,7 @@ if (trueMobile) {
 		new google.maps.Point(0,0),
 		new google.maps.Point(36,65)
 	);
+
 	// your marker coordinates   --------
 	var companyPos = new google.maps.LatLng(9.992772,76.323437);
 	var companyMarker = new google.maps.Marker({
@@ -997,6 +999,20 @@ if (trueMobile) {
 		map: map,
 		icon: companyImage,
 		zIndex: 3,
+        draggable:false,
         title: "Robo Inventions"
 	});
+          google.maps.event.addListener(marker, 'click', toggleBounce);
+        
+    
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+        google.maps.event.addDomListener(window, 'load', initialize);
+
 }
