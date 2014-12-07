@@ -988,7 +988,7 @@ if (trueMobile) {
 	var companyImage = new google.maps.MarkerImage('images/marker.png',
 		new google.maps.Size(150,150),
 		new google.maps.Point(0,0),
-		new google.maps.Point(66,123)
+		new google.maps.Point(36,65)
 	);
 	// your marker coordinates   --------
 	var companyPos = new google.maps.LatLng(9.992772,76.323437);
