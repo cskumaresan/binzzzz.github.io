@@ -220,7 +220,7 @@ Color styles - add you color here
     color: #000;
 }
 ::-moz-selection {
-    background: ##D30000;
+    background: #D30000;
     color: #000;
 }
 #jpreBar,

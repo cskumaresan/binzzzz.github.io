@@ -985,10 +985,10 @@ if (trueMobile) {
 		styles, styledMapOptions);
 	map.mapTypes.set('bestfromgoogle',roboMapType);
 	map.setMapTypeId('bestfromgoogle');				
-	var companyImage = new google.maps.MarkerImage('images/marker.png',
-		new google.maps.Size(50,50),
+	var companyImage = new google.maps.MarkerImage('images/marker1.png',
+		new google.maps.Size(150,150),
 		new google.maps.Point(0,0),
-		new google.maps.Point(28,58)
+		new google.maps.Point(66,123)
 	);
 	// your marker coordinates   --------
 	var companyPos = new google.maps.LatLng(9.992772,76.323437);
