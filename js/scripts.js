@@ -985,7 +985,7 @@ if (trueMobile) {
 		styles, styledMapOptions);
 	map.mapTypes.set('bestfromgoogle',roboMapType);
 	map.setMapTypeId('bestfromgoogle');				
-	var companyImage = new google.maps.MarkerImage('images/marker1.png',
+	var companyImage = new google.maps.MarkerImage('images/marker.png',
 		new google.maps.Size(150,150),
 		new google.maps.Point(0,0),
 		new google.maps.Point(66,123)
