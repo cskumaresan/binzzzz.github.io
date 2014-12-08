@@ -711,7 +711,7 @@ About
 }
 .customNavigation a.next-slide {
     position: absolute;
-    right: 10%;
+    right: 0%;
     top: 10%;
     display: block;
 }
