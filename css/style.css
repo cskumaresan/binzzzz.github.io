@@ -424,7 +424,7 @@ Navigation
     top: 0;
     right: 0px;
     width: 100%;
-    height: 55px;
+    height: 58px;
     z-index: -1;
     opacity:.9;
 }
@@ -549,12 +549,13 @@ color: #D30000;
    margin-top: 0px;
 cursor: pointer;
 margin-right: 0%;
+    margin-bottom: 8px;
 }
 .social-list {
-    position: absolute;
-    bottom: 18px;
-    left: 4px;
-    width: 98%;
+   position: absolute;
+bottom: 36px;
+left: 4px;
+width: 98%;
 }
 .social-list ul {
     position: relative;
@@ -731,7 +732,7 @@ Facts
 --------------------------------------------------------------*/
 
 #facts {
-    background: #292929 url(../images/box.png) no-repeat center;
+    background: #0B0A0A url(../images/box.png) no-repeat center;
 }
 #facts .content {
     padding: 100px 0;
@@ -743,7 +744,6 @@ Facts
     display: block;
     position: relative;
     margin-top: 21px;
-    border-left: 1px solid #38393b;
 }
 #facts ul li:first-child {
     border-left: none;
@@ -773,7 +773,7 @@ Facts
 #facts ul li h6:before {
     top: -20px;
     left: 50%;
-    border: solid transparent;
+    border:  transparent;
     content: " ";
     height: 0;
     width: 0;
@@ -967,31 +967,31 @@ Team
     padding: 100px 0 0 0;
 }
 #service_boxes {
-    margin-top: 70px;
+    margin-top: 105px;
+    margin-bottom: 0px;
 }
 .service_box {
-    margin: 0 20px 10px 20px;
-    display: inline-block;
-    width: 250px;
-    position: relative;
-    opacity: 0;
-    top: 25%;
+    margin: 0px 2px -13px;
+display: inline-block;
+width: 233px;
+position: relative;
+opacity: 0;
+top: 25%;
 }
 .animbox {
-    padding: 17px 35px;
-    width: 250px;
-    float: left;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(255, 255, 255, .5);
-    border-radius: 4px;
-    letter-spacing: 1px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    color: #fff;
-    font-family: 'TitilliumWeb-Regular', ;
-    text-transform: uppercase;
+    padding: 12px 28px;
+width: 208px;
+float: left;
+margin-top: 0px;
+margin-bottom: 35px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 4px;
+letter-spacing: 1px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+color: #FFF;
+text-transform: uppercase;
 }
 .serviseslider-holder {
     position: relative;
@@ -1029,9 +1029,9 @@ Team
     pointer-events: none;
 }
 .actser:before {
-    border-bottom-color: #fff;
-    border-width: 36px;
-    margin-left: -36px;
+   border-bottom-color: #FFF;
+border-width: 53px;
+margin-left: -63px;
 }
 .icon-holder {
     width: 90px;
@@ -1045,6 +1045,23 @@ Team
     color: #fff;
     margin-top: 25px;
     -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.6, transparent), to(rgba(0, 0, 0, 0.5)));
+}
+.button3d{
+    padding: 12px 23px;
+width: 87%;
+float: right;
+margin-top: 32px;
+margin-bottom: 35px;
+border-color: 1px solid rgba(9, 9, 9, 0.5);
+border-radius: 6px;
+letter-spacing: 1px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+color: #FFF;
+text-transform: uppercase;
+background-color: #CF191C;
+right: 7%;
 }
 /* ====================
  portfolio
@@ -1447,9 +1464,11 @@ Testimonials
     cursor: move;
     padding: 8px;
     margin-top: 30px;
+    text-align: center;
 }
 #clientsay .item {
     padding: 30px 20px;
+    text-align: center;
 }
 #clientsay span {
     margin: 20px auto;
@@ -1574,12 +1593,12 @@ Contacts
 .contact-details span {
     width: 100%;
     float: left;
-    margin:20px 0;
     position: relative;
     z-index: 3;
     color: #fff;
     font-size: 14px;
     font-weight: 300;
+    margin-bottom: 20%;
 }
 .smallicon {
     width: 50px;
@@ -1776,10 +1795,11 @@ Footer
 
 .footer {
     width: 100%;
-    position: relative;
-    padding: 0px 0;
-    z-index: 6;
-    font-size: 1.2em;
+position: relative;
+padding: 0px;
+z-index: 6;
+font-size: 1.3em;
+letter-spacing: 4px;
 }
 .footer p {
     font-size: 0.9em;
@@ -2391,7 +2411,7 @@ Tablet
         font-size: 40px;
     }
     .member-box {
-        width: 300px;
+        width: 290px;
     }
     #service_boxes {
         margin-top: 30px;

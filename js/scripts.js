@@ -164,7 +164,7 @@ function initRobo() {
     $(".scroll-links , .body-overlay").bind('click', function (event) {
         event.preventDefault();
         $.scrollTo(
-            $(this).attr('href'), 950, {
+            $(this).attr('href'), 150, {
                 easing: 'swing',
                 offset: 25,
                 'axis': 'y'
@@ -174,7 +174,9 @@ function initRobo() {
         }, 900);
     });
     $(".logomiddle").bind('click', function (event) {
-        window.location = 'index.html';
+         $('html').scrollTo('#main', 1000, {
+                'axis': 'y'
+            });
     });
     // Call plugins  ----------------------------------------
 
@@ -182,7 +184,7 @@ function initRobo() {
 
     $('#slides').superslides({
         animation: 'fade',
-        play: 5000
+        play: 3000
     });
 
     //  scroll nav --------
@@ -205,7 +207,8 @@ function initRobo() {
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
-        transitionStyle: "goDown"
+        transitionStyle: "goDown",
+        play: 2000
     });
 
     $("#client-carusel").owlCarousel({
@@ -236,7 +239,6 @@ function initRobo() {
         items: 3,
         itemsDesktop: false,
     });
-
     // about animation  --------
 
     $(".next-slide, .close").click(function () {
@@ -244,7 +246,7 @@ function initRobo() {
         owl.trigger('owl.next');
         if (ww < 959) {
             setTimeout(function () {
-                $('html').scrollTo('#about h2', 800, {
+                $('html').scrollTo('#about h2', 80, {
                     'axis': 'y'
                 });
             }, 600);
@@ -293,7 +295,7 @@ function initRobo() {
         animation: "slide",
         slideDirection: "horizontal",
         slideshow: false,
-        slideshowSpeed: 3500,
+        slideshowSpeed: 2500,
         animationDuration: 500,
         directionNav: true,
         controlNav: false,
@@ -891,6 +893,19 @@ if (trueMobile) {
     });
 }
 
+//tel
+  $("#tel").bind('click', function (event){
+      document.location.href= "tel:+914843068676"
+  });
+//print
+  $("#printerbtn").bind('click', function (event){
+      document.location.href= "http://www.3dhubs.com/chennai/hubs/robo-invention/3dprint"
+  });
+//
+$("#ebrochure").click(function() {
+    // // hope the server sets Content-Disposition: attachment!
+    window.location = './images/ebrochure.pdf';
+});
 // google map styles and functions  --------
 
 	var map;
