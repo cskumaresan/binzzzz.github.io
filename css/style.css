@@ -46,7 +46,7 @@ body {
     font-weight: normal;
     font-size: normal;
     color: #000;
-    background: #fff;
+    background: #CCDDD3;
     height: 100%;
     text-align: center;
 }
@@ -125,6 +125,7 @@ Content Styles
 #main {
     opacity: 0;
     height: 100%;
+    width: 100%
 }
 .wrapper {
     height: 100%;
@@ -309,9 +310,7 @@ Color styles - add you color here
     pointer-events: none;
 }
 .actser:after {
-    border-width: 6px;
-    margin-left: -6px;
-    border-top-color: #CA0004;
+  
 }
 .inner a:hover,
 .inner li.current a {
@@ -423,7 +422,7 @@ Navigation
     background: #fff;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0px;
     width: 100%;
     height: 51px;
     z-index: -1;
@@ -443,6 +442,7 @@ color: #D30000;
 .headerbar a.current {
     opacity: .5;
     color: #000;
+    border-bottom-color: blue;
 }
 .headerbar a.current:active {
     border-bottom: 3px solid #000;
@@ -554,7 +554,7 @@ margin-right: 0%;
     position: absolute;
     bottom: 18px;
     left: 4px;
-    width: 100%;
+    width: 98%;
 }
 .social-list ul {
     position: relative;
@@ -566,11 +566,12 @@ margin-right: 0%;
 }
 .social-list ul li a {
     float: left;
-    border-bottom: 1px solid #101011;
-    border-top: 1px solid #38393b;
+    border-bottom: 0px solid #101011;
+    border-top: 0px solid #38393b;
     color: #fff;
     width: 45px;
     height: 25px;
+    padding: 8px;
 }
 .social-list ul li i {
     margin-top: 6px;
@@ -792,9 +793,7 @@ Facts
     margin-left: -12px;
 }
 #facts ul li h6:after {
-    border-top-color: #fff;
-    border-width: 6px;
-    margin-left: -6px;
+ 
 }
 .num {
     position: relative;
@@ -1568,12 +1567,12 @@ Contacts
     padding: 50px 0 0;
 }
 .contact-details {
-    margin: 50px 0;
+    margin: 0px 0;
 }
 .contact-details span {
     width: 100%;
     float: left;
-    margin: 30px 0;
+    margin:20px 0;
     position: relative;
     z-index: 3;
     color: #fff;
