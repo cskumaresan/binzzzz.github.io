@@ -266,6 +266,7 @@ Color styles - add you color here
 .error,
 #options li:hover,
 #options li.actcat,
+.headerbar a:hover,
 .social-list ul li a:hover,
 .num,
 .project-description h3,
@@ -437,8 +438,11 @@ display: inline-block;
 margin: 0px 3%;
 white-space: nowrap;
 color: #D30000;
+
 }
-.headerbar a:hover,
+.headerbar a:hover{
+    text-decoration: underline;
+}
 .headerbar a.current {
     opacity: .5;
     color: #000;
@@ -1115,10 +1119,9 @@ right: 7%;
     height: 1px;
 }
 .box {
-   float: left;
-width: 33%;
-padding: 2px;
+   width: 33%;
 text-align: center;
+padding: 0px;
 }
 .box a {
     position: relative;
@@ -2401,7 +2404,7 @@ Tablet
     }
     .contact-details span,
     .contact-details a {
-        margin: 12px 0;
+        margin-bottom: 12px 0px;
     }
     #clientsay .owl-next,
     #clientsay .owl-prev {

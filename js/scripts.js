@@ -271,7 +271,7 @@ function initRobo() {
         slideshow: false,
         controlNav: false,
         directionNav: false,
-        startAt: 1,
+        startAt: 2,
         start: function (slider) {
             $('a.animbox').click(function () {
                 var slideTo = $(this).attr("name")
